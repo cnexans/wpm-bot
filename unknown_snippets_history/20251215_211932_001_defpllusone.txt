@@ -1,0 +1,43 @@
+OCR Detected: defpllusone
+Timestamp: 20251215_211932
+Selected Language: python
+
+To add correction:
+python add_ocr_correction.py 'defpllusone' 'correct_name'
+
+Available functions:
+  - addbinary
+  - character counter
+  - child-to-parent communication
+  - climbstairs
+  - color picker
+  - counter
+  - deleteduplicates
+  - deleteduplicateslist
+  - display window size
+  - dropdown select
+  - fetch data
+  - filter a list
+  - font size changer
+  - greeting with props
+  - inordertraversal
+  - ispalindrome
+  - issametree
+  - issymmetric
+  - lengthoflastword
+  - light/dark mode
+  - longestcommonprefix
+  - mergesortedarray
+  - mergetwolists
+  - mysqrt
+  - plusone
+  - removeduplicates
+  - searchinsert
+  - simple accordion
+  - simple to-do list
+  - stopwatch timer
+  - strstr
+  - submit form
+  - toggle visibility
+  - twosum
+  - uncontrolled login form

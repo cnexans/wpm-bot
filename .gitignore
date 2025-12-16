@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+*.egg-info/
+
+# Screenshots (except unknown history)
+*.png
+!unknown_snippets_history/*.png
+
+# OCR output
+ocr_output.txt
+
+# Chrome
+chromedriver*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Keep unknown snippets history folder structure
+!unknown_snippets_history/.gitkeep
