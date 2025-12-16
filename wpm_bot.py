@@ -158,6 +158,8 @@ class WPMBot:
             # Skip leading whitespace (indentation) - game auto-indents
             # But preserve the actual code content
             stripped_line = line.lstrip()
+
+            print(f"Typing line: -->{stripped_line}<--")
             
             if not stripped_line:
                 # Empty line, just press Enter
@@ -766,14 +768,16 @@ class WPMBot:
             
             # Type the code
             print(f"⌨️  Typing {len(code_text)} characters...")
-            char_count = 0
-            for char in code_text:
-                self.type_text(char)
-                char_count += 1
-                if char_count % 50 == 0:
-                    print(f"   Progress: {char_count}/{len(code_text)}")
-            
-            print(f"✅ Typed {char_count} characters")
+            self.type_text(code_text)
+
+            # OLD: Type character by character
+            # char_count = 0
+            # for char in code_text:
+            #     self.type_text(char)
+            #     char_count += 1
+            #     if char_count % 50 == 0:
+            #         print(f"   Progress: {char_count}/{len(code_text)}")
+            # print(f"✅ Typed {char_count} characters")
             
             # Remember this function to avoid re-typing
             prev_function_name = current_function
@@ -850,8 +854,8 @@ class WPMBot:
 
 
 def main():
-    # Typing speed: lower = faster (0.01 = very fast, 0.05 = more human-like)
-    typing_speed = 0.015
+    # Typing speed: delay between characters above 0.005, and 0.01 is recommended
+    typing_speed = 0.01  # 10ms default for reliable canvas event handling
     language = 'python'  # Default language
     
     # Parse command line arguments
