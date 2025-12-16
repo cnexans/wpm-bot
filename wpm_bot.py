@@ -784,7 +784,7 @@ class WPMBot:
             
             # Wait for game to process and move to next challenge
             print("⏳ Waiting for next challenge...")
-            time.sleep(4)  # Give game more time to transition
+            time.sleep(2)  # Give game more time to transition
             
         print("\n🏁 Typing loop finished")
         
